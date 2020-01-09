@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project management</title>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="icon" type="image/png" href="resources/img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/statistics-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiko|Gentium+Basic|Lora&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="employees.html">Employees</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="statistics.html">Statistics</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto right-items">
+                <li class="nav-item"> <a class="nav-link" href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <canvas id="projectsChart"></canvas>
+    <script src = "bundle.js"></script>
+    <script>
+        console.log(window.Chart);
+    </script>
+    <!-- <script src="node/node_modules/chart.js/bower.json"></script> -->
+    <script src="resources/js/statistics-actions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project management</title>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="icon" type="image/png" href="resources/img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amiko|Gentium+Basic|Lora&display=swap" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="resources/css/employees-style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="employees.html">Employees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="statistics.html">Statistics</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto right-items">
+                <li class="nav-item"> <a class="nav-link" href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="table-buttons">
+            <a href = 'add-employee.html'><button class="btn btn-success">Add new employee</button></a>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="filter col-12 col-sm-12	col-md-3 col-lg-3 col-xl-3">
+            <div class="container mt-3">
+                <button type="button" class="btn btn-primary" data-toggle="collapse"
+                    data-target="#attributeList">Filter</button>
+                <div id="attributeList" class="collapse">
+
+                    <div class="container mt-3">
+                        <button type="button" class="btn filter-attr btn-outline-primary" data-toggle="collapse"
+                            data-target="#titleList">Title</button>
+                        <div id="titleList" class="collapse">
+
+                        </div>
+                    </div>
+
+                    <div class="container mt-3">
+                        <button type="button" class="btn filter-attr btn-outline-primary" data-toggle="collapse"
+                            data-target="#departmentList">Department</button>
+                        <div id="departmentList" class="collapse">
+
+                        </div>
+                    </div>
+
+                    <div class="container mt-3">
+                        <button id="filterTrigger" type="button" class="btn btn-success" data-toggle="collapse"
+                            data-target="#attributeList">See results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="employeesList" class='col-12 col-sm-12	col-md-9 col-lg-9	col-xl-9'>
+
+        </div>
+
+    </div>
+    
+    <!-- <script src="node-rest/app.js"></script> -->
+
+    <script src="resources/js/general.js"></script>
+    <script src="resources/js/employees-actions.js"></script>
+</body>
+
+</html>

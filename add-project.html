@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project management</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="icon" type="image/png" href="resources/img/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/add-project-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiko|Gentium+Basic|Lora&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="employees.html">Employees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="statistics.html">Statistics</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto right-items">
+                <li class="nav-item"> <a class="nav-link" href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="form-row">
+            <div class="col-12">
+                <div class="col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name of your project">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-12">
+                <div class="col-md-6">
+                    <label for="inputDepartment">Department</label>
+                    <input type="text" class="form-control" id="inputDepartment">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="form-row">
+            <div class="col-12">
+                <div class="col-md-6">
+                    <label for="inputDepartment">Department</label>
+                    <select class="custom-select form-control" id="inputDepartment">
+                        <option selected>Select project department</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="sales">Sales</option>
+                        <option value="production">Production</option>
+                    </select>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="form-row">
+            <div class="col-12">
+                <div class="col-12">
+                    <label for="inputDescription">Description</label>
+                    <textarea rows="4" class="form-control" id="inputDescription"
+                        placeholder="Describe your project"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-6">
+                <label for="inputStartDate" class="col-4 col-form-label">Start Date</label>
+                <div class="col-8">
+                    <input class="form-control" type="date" value="2020-01-01" id="inputStartDate">
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="inputEndDate" class="col-4 col-form-label">End Date</label>
+                <div class="col-8">
+                    <input class="form-control" type="date" value="2021-01-01" id="inputEndDate">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="form-row">
+            <div class="col-12">
+                <div class="form-check">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="form-row">
+            <div class="col-12">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" id="addProjectBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <script type="text/javascript" src="projects.json"></script> -->
+    <script src="resources/js/add-project-actions.js"></script>
+</body>
+
+</html>
