@@ -1,0 +1,124 @@
+/*
+font-family: 'Amiko', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Gentium Basic', serif;
+*/
+
+
+body {
+    font-size: 10px;
+    width: 100vw;
+    background: url(../img/index-background.jpg);
+    background-repeat: repeat;
+    background-size: 100vw;
+    user-select: none;
+}
+
+.navbar {
+    font-family: 'Amiko', sans-serif;
+    font-size: 1rem;
+}
+
+.right-items {
+    float: right;
+    margin-right: 0 !important;
+}
+
+#employeesList {
+    float: right;
+    margin: 2rem 0;
+    padding: 0;
+    height: auto;
+    overflow-y: visible;
+}
+
+.table-buttons {
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.table-buttons button {
+    float: right;
+    margin-right: 0;
+    background-color: #004d26;
+    border-color: #004d26;
+}
+
+#employeesList .table {
+    width: 90%;
+    margin: auto;
+    color: white;
+    font-family: 'Amiko', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    text-align: left;
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#employeesList .table thead tr {
+    background-color: rgba(33, 37, 41, 0.8);
+    text-transform: uppercase;
+}
+
+th {
+    cursor: pointer;
+    width: 15vw;
+}
+
+th img {
+    float: right;
+    width: 1rem;
+    visibility: hidden;
+}
+
+th[ordered="desc"] img {
+    float: right;
+    width: 1rem;
+    visibility: hidden;
+    transform: rotate(180deg);
+}
+
+th:hover img {
+    visibility: visible;
+}
+
+#employeesList tbody tr {
+    cursor: pointer;
+}
+
+#employeesList tbody tr:hover  {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.has-been-fired {
+   background-color: rgba(128, 0, 0, 0.2);
+}
+
+.filter {
+    float: left;
+    margin: 1rem auto;
+    padding: 0 5rem;
+    color: white;
+}
+
+.filter .form-check {
+    font-size: 1rem;
+    color: white;
+}
+
+/* .filter button {
+    padding: 0.3rem 2rem;
+    float: left;
+    margin-left: 0;
+    background-color: #66004d;
+    border-color: #66004d;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Amiko', sans-serif;
+} */
+
+#attributesList {
+    margin-left: 1rem;
+}
